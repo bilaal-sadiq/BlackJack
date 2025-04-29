@@ -1,19 +1,25 @@
-// let firstCard = 6
-// let secondCard = 6
+let firstCard = 10
+let secondCard = 7
 
-// let sumOfCard = firstCard + secondCard
+let sum = firstCard + secondCard
 
-// console.log(sumOfCard)
+let hasBlackJack = false
+let isAlive = true
+let message = ""
 
-
-let age = 100
-let myAge = 26
-
-if (myAge < age) {
-    console.log("Not yet")
+if (sum <= 20) {
+    message = "Do you want to draw a new card"
+    
+} 
+else if (sum === 21) {
+    message = "Wohoo! You've got a blackjack"
+    hasBlackJack = true
+} 
+else {
+    message = "You're out the game"
+    isAlive = false
 }
-else if (myAge > age) {
-    console.log("Here is your burtday card from the king")
-}
-else (age > 101)
+
+console.log(message)
+
     
