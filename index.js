@@ -35,6 +35,10 @@ function startGame() {
 
 }
 
+function newCard() {
+   console.log("Drawing out a new card") 
+}
+
 
 
 
