@@ -1,7 +1,9 @@
 let firstCard = 9
 let secondCard = 7
 
+
 let sum = firstCard + secondCard
+
 
 let hasBlackJack = false
 let isAlive = true
@@ -37,6 +39,11 @@ function startGame() {
 
 function newCard() {
    console.log("Drawing out a new card") 
+
+   let card = 2
+   sum += card
+
+   startGame()
 }
 
 
