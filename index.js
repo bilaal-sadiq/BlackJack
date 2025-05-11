@@ -14,8 +14,12 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.getElementById("cards-el")
 
-
 function startGame() {
+    renderGame
+}
+
+
+function renderGame() {
 
     cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
     sumEl.textContent = "Sum: " + sum
@@ -39,11 +43,9 @@ function startGame() {
 
 function newCard() {
    console.log("Drawing out a new card") 
-
    let card = 2
    sum += card
-
-   startGame()
+   renderGame()
 }
 
 
