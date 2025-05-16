@@ -49,15 +49,20 @@ function newCard() {
 }
 
 
-let featuredPosts = [
-    "i have one year in project manager",
-    "I like frontend",
-    "I need to learn"
+let messages = [
+    "Hey how is it going",
+    "i'm great thank you",
+    "All good. Been working"
 ]
 
-console.log(featuredPosts[1])
-console.log(featuredPosts[2])
-console.log(featuredPosts[0])
+let newMessage = "Same here!"
+
+messages.push(newMessage)
+
+console.log(messages)
+
+
+
 
 
 
