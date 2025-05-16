@@ -1,5 +1,6 @@
 let firstCard = 9
 let secondCard = 7
+let cards = [firstCard, secondCard]
 
 
 let sum = firstCard + secondCard
@@ -10,18 +11,17 @@ let isAlive = true
 let message = ""
 
 let messageEl = document.getElementById("message-el")
-// let sumEl = document.getElementById("sum-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 function startGame() {
-    renderGame
+    renderGame()
 }
 
 
 function renderGame() {
 
-    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
     sumEl.textContent = "Sum: " + sum
 
     if (sum <= 20) {
@@ -49,8 +49,15 @@ function newCard() {
 }
 
 
+let featuredPosts = [
+    "i have one year in project manager",
+    "I like frontend",
+    "I need to learn"
+]
 
-
+console.log(featuredPosts[1])
+console.log(featuredPosts[2])
+console.log(featuredPosts[0])
 
 
 
