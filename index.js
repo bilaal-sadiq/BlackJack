@@ -42,27 +42,34 @@ function renderGame() {
 }
 
 function newCard() {
-   console.log("Drawing out a new card") 
    let card = 2
    sum += card
+   cards.push(card)
    renderGame()
 }
 
 
-let messages = [
-    "Hey how is it going",
-    "i'm great thank you",
-    "All good. Been working"
-]
+// let messages = [
+//     "Hey how is it going",
+//     "i'm great thank you",
+//     "All good. Been working"
+// ]
 
-let newMessage = "Same here!"
+// let newMessage = "Same here!"
 
-messages.push(newMessage)
+// messages.push(newMessage)
 
-console.log(messages)
+// messages.pop()
+
+// console.log(messages)
 
 
 
+for (let count = 10; count <= 100; count +=10)
+{
+    console.log(count)
+
+}    
 
 
 
