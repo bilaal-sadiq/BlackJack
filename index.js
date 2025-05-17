@@ -65,9 +65,9 @@ function newCard() {
 
 
 
-for (let count = 10; count <= 100; count +=10)
+for (let i = 10; i <= 100; i +=10)
 {
-    console.log(count)
+    console.log(i)
 
 }    
 
