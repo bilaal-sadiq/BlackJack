@@ -21,9 +21,13 @@ function startGame() {
 
 function renderGame() {
 
-    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
-    sumEl.textContent = "Sum: " + sum
+    // cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+    for(let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " " 
+    }
 
+
+    sumEl.textContent = "Sum: " + sum
     if (sum <= 20) {
         message = "Do you want to draw a new card"
         
@@ -65,12 +69,12 @@ function newCard() {
 
 // How to write for loop with arrays and DOM element. 
 
-let sentence = ["Hello","My","Name","is","Bilaal" ]
-let greetingEl = document.getElementById("greeting-el")
+// let sentence = ["Hello","My","Name","is","Bilaal" ]
+// let greetingEl = document.getElementById("greeting-el")
 
-for (let i = 0; i <= sentence.length; i++) {
-    greetingEl.textContent += sentence[i] + " "
-}
+// for (let i = 0; i <= sentence.length; i++) {
+//     greetingEl.textContent += sentence[i] + " "
+// }
 
 
 
