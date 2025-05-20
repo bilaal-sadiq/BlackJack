@@ -63,15 +63,13 @@ function newCard() {
 
 // console.log(messages)
 
+// How to write for loop with arrays and DOM element. 
 
+let sentence = ["Hello","My","Name","is","Bilaal" ]
+let greetingEl = document.getElementById("greeting-el")
 
-let messages = [
-
-    7, 3, 9
-]   
-
-for (let i = 0; i < messages.length; i += 1) {
-    console.log(messages[i])
+for (let i = 0; i <= sentence.length; i++) {
+    greetingEl.textContent += sentence[i] + " "
 }
 
 
