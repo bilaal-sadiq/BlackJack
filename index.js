@@ -65,11 +65,14 @@ function newCard() {
 
 
 
-for (let i = 10; i <= 100; i +=10)
-{
-    console.log(i)
+let messages = [
 
-}    
+    7, 3, 9
+]   
+
+for (let i = 0; i < messages.length; i += 1) {
+    console.log(messages[i])
+}
 
 
 
