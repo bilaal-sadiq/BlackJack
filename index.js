@@ -14,6 +14,13 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.getElementById("cards-el")
 
+function getRandomCard(randomCard) {
+    randomCard = 5
+    console.log(randomCard)
+}
+
+
+
 function startGame() {
     renderGame()
 }
