@@ -79,4 +79,4 @@ function newCard() {
 
 
 
-    
+// Change start game bug so it loads only two numbers at a time and doesn't mutiply
