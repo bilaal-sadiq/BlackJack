@@ -1,5 +1,5 @@
-let firstCard = 9
-let secondCard = 7
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
 
 
@@ -14,9 +14,9 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.getElementById("cards-el")
 
-function getRandomCard(randomCard) {
-    randomCard = 5
-    console.log(randomCard)
+function getRandomCard() {
+    let cardNumber = Math.floor(Math.random() * 13) + 1
+    return cardNumber
 }
 
 
@@ -28,7 +28,7 @@ function startGame() {
 
 function renderGame() {
 
-   
+   cardsEl.textContent = "Cards: "
     for(let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " " 
     }
@@ -53,7 +53,7 @@ function renderGame() {
 }
 
 function newCard() {
-   let card = 2
+   let card = getRandomCard()
    sum += card
    cards.push(card)
    renderGame()
@@ -87,3 +87,26 @@ function newCard() {
 
 
 // Change start game bug so it loads only two numbers at a time and doesn't mutiply
+
+// let player1Time = 102
+// let player2Time = 107
+
+// function getTotalRacetime() {
+//     return player1Time + player2Time
+// }
+
+// let totalTime =  getTotalRacetime()
+
+// console.log(totalTime)
+
+
+
+
+
+
+// function rollDice() {
+//     let flooredNumber = Math.floor(Math.random() * 6) + 1
+//     return flooredNumber
+// }
+
+// console.log(rollDice())
