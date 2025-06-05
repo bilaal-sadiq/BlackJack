@@ -5,11 +5,18 @@ let sum = 0
 let hasBlackJack = false
 let isAlive = false
 let message = ""
-
 let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.getElementById("cards-el")
 
+let player = {
+    name: "Per",
+    chips: 145
+}
+
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
 
 
 
@@ -66,10 +73,12 @@ function renderGame() {
 }
 
 function newCard() {
-   let card = getRandomCard()
-   sum += card
-   cards.push(card)
-   renderGame()
+    if (isAlive === true && hasBlackJack === true) {
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        renderGame()
+    }
 }
 
 
@@ -124,15 +133,24 @@ function newCard() {
 
 // console.log(rollDice())
 
-let likesDocumentaries = false
-let likesStartups = true 
+// let likesDocumentaries = false
+// let likesStartups = true 
 
-if (likesDocumentaries || likesStartups) {
-    recommendMovie()
+// if (likesDocumentaries || likesStartups) {
+//     recommendMovie()
+// }
+
+
+
+// function recommendMovie() {
+//     console.log("Hey, Check out this new film we think you will like!")
+// }
+
+let airBnb = {
+    name: "Medival Hotel",
+    price: 190,
+    avaliable: false,
+    amendatites: ["wi-fi", "parking"]
 }
 
-
-
-function recommendMovie() {
-    console.log("Hey, Check out this new film we think you will like!")
-}
+console.log(airBnb.name, airBnb.amendatites)
