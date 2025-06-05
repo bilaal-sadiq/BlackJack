@@ -124,13 +124,15 @@ function newCard() {
 
 // console.log(rollDice())
 
-let hasSolvedChallenge = false
-let hasHintsLeft = false 
+let likesDocumentaries = false
+let likesStartups = true 
 
-if (hasSolvedChallenge === false && hasHintsLeft === false) {
-    showSoultion()
+if (likesDocumentaries || likesStartups) {
+    recommendMovie()
 }
 
-function showSoultion() {
-    console.log("Showing the soultion.... ")
+
+
+function recommendMovie() {
+    console.log("Hey, Check out this new film we think you will like!")
 }
