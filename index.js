@@ -1,13 +1,13 @@
 // let firstCard = getRandomCard()
 // let secondCard = getRandomCard()
-let cards = []
-let sum = 0
-let hasBlackJack = false
-let isAlive = false
-let message = ""
-let messageEl = document.getElementById("message-el")
-let sumEl = document.querySelector("#sum-el")
-let cardsEl = document.getElementById("cards-el")
+// let cards = []
+// let sum = 0
+// let hasBlackJack = false
+// let isAlive = false
+// let message = ""
+// let messageEl = document.getElementById("message-el")
+// let sumEl = document.querySelector("#sum-el")
+// let cardsEl = document.getElementById("cards-el")
 
 let player = {
     name: "Per",
@@ -20,66 +20,66 @@ playerEl.textContent = player.name + ": $" + player.chips
 
 
 
-function getRandomCard() {
-    let cardNumber = Math.floor(Math.random() * 13) + 1
-    if (cardNumber > 10) {
-        return 10
-    } else if (cardNumber === 1) {
-        return 11
-    } else {
-        return cardNumber
-    }
+// function getRandomCard() {
+//     let cardNumber = Math.floor(Math.random() * 13) + 1
+//     if (cardNumber > 10) {
+//         return 10
+//     } else if (cardNumber === 1) {
+//         return 11
+//     } else {
+//         return cardNumber
+//     }
     
-}
+// }
 
 
 
-function startGame() {
-    let isAlive = true
-    let firstCard = getRandomCard()
-    let secondCard = getRandomCard()
-    cards = [firstCard, secondCard]
-    sum = firstCard + secondCard
+// function startGame() {
+//     let isAlive = true
+//     let firstCard = getRandomCard()
+//     let secondCard = getRandomCard()
+//     cards = [firstCard, secondCard]
+//     sum = firstCard + secondCard
 
 
-    renderGame()
-}
+//     renderGame()
+// }
 
 
-function renderGame() {
+// function renderGame() {
 
-   cardsEl.textContent = "Cards: "
-    for(let i = 0; i < cards.length; i++) {
-        cardsEl.textContent += cards[i] + " " 
-    }
+//    cardsEl.textContent = "Cards: "
+//     for(let i = 0; i < cards.length; i++) {
+//         cardsEl.textContent += cards[i] + " " 
+//     }
 
 
-    sumEl.textContent = "Sum: " + sum
-    if (sum <= 20) {
-        message = "Do you want to draw a new card"
+//     sumEl.textContent = "Sum: " + sum
+//     if (sum <= 20) {
+//         message = "Do you want to draw a new card"
         
-    } 
-    else if (sum === 21) {
-        message = "Wohoo! You've got a blackjack"
-        hasBlackJack = true
-    } 
-    else {
-        message = "You're out the game"
-        isAlive = false
-    }
+//     } 
+//     else if (sum === 21) {
+//         message = "Wohoo! You've got a blackjack"
+//         hasBlackJack = true
+//     } 
+//     else {
+//         message = "You're out the game"
+//         isAlive = false
+//     }
 
-    messageEl.textContent = message
+//     messageEl.textContent = message
 
-}
+// }
 
-function newCard() {
-    if (isAlive === true && hasBlackJack === true) {
-        let card = getRandomCard()
-        sum += card
-        cards.push(card)
-        renderGame()
-    }
-}
+// function newCard() {
+//     if (isAlive === true && hasBlackJack === true) {
+//         let card = getRandomCard()
+//         sum += card
+//         cards.push(card)
+//         renderGame()
+//     }
+// }
 
 
 // let messages = [
@@ -146,11 +146,39 @@ function newCard() {
 //     console.log("Hey, Check out this new film we think you will like!")
 // }
 
-let airBnb = {
-    name: "Medival Hotel",
-    price: 190,
-    avaliable: false,
-    amendatites: ["wi-fi", "parking"]
-}
+// let airBnb = {
+//     name: "Medival Hotel",
+//     price: 190,
+//     avaliable: false,
+//     amendatites: ["wi-fi", "parking"]
+// }
 
-console.log(airBnb.name, airBnb.amendatites)
+// console.log(airBnb.name, airBnb.amendatites)
+
+// let person = {
+//     name: "Bilaal",
+//     age: 26,
+//     country: "UK"
+    
+// }
+
+
+// function logData() {
+// console.log(person.name + " is " + person.age + " years old and lives in " + person.country)
+// }
+
+// logData()
+
+let age = 15 
+
+if (age < 6) {
+    console.log("free")
+} else if (age < 18) {
+    console.log("child discount")
+} else if (age < 27) {
+    console.log("student discount")
+} else if (age < 67) {
+    console.log("full price")
+} else {
+    console.log("senior citizen discount")
+}
