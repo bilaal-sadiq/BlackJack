@@ -183,8 +183,18 @@ playerEl.textContent = player.name + ": $" + player.chips
 //     console.log("senior citizen discount")
 // }
 
-let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
+let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
 
-for (let i = 0; i < largeCountries.length; i++) {
-    console.log("- " + largeCountries[i])
-}
+
+largeCountries.shift()
+largeCountries.pop()
+
+largeCountries.unshift("China")
+largeCountries.push("Pakistan")
+
+console.log(largeCountries)
+
+
+// for (let i = 0; i < largeCountries.length; i++) {
+//     console.log("- " + largeCountries[i])
+// }
