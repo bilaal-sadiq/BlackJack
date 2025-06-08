@@ -183,18 +183,25 @@ playerEl.textContent = player.name + ": $" + player.chips
 //     console.log("senior citizen discount")
 // }
 
-let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+// let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
 
 
-largeCountries.shift()
-largeCountries.pop()
+// largeCountries.shift()
+// largeCountries.pop()
 
-largeCountries.unshift("China")
-largeCountries.push("Pakistan")
+// largeCountries.unshift("China")
+// largeCountries.push("Pakistan")
 
-console.log(largeCountries)
+// console.log(largeCountries)
 
 
 // for (let i = 0; i < largeCountries.length; i++) {
 //     console.log("- " + largeCountries[i])
 // }
+
+let dayOfMonth = 13
+let weekday = "Friday"
+
+if (dayOfMonth === 13 && weekday === "Friday") {
+    console.log("😱")
+} 
