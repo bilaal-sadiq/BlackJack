@@ -169,16 +169,22 @@ playerEl.textContent = player.name + ": $" + player.chips
 
 // logData()
 
-let age = 15 
+// let age = 15 
 
-if (age < 6) {
-    console.log("free")
-} else if (age < 18) {
-    console.log("child discount")
-} else if (age < 27) {
-    console.log("student discount")
-} else if (age < 67) {
-    console.log("full price")
-} else {
-    console.log("senior citizen discount")
+// if (age < 6) {
+//     console.log("free")
+// } else if (age < 18) {
+//     console.log("child discount")
+// } else if (age < 27) {
+//     console.log("student discount")
+// } else if (age < 67) {
+//     console.log("full price")
+// } else {
+//     console.log("senior citizen discount")
+// }
+
+let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
+
+for (let i = 0; i < largeCountries.length; i++) {
+    console.log("- " + largeCountries[i])
 }
