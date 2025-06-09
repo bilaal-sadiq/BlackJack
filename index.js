@@ -1,13 +1,13 @@
-// let firstCard = getRandomCard()
-// let secondCard = getRandomCard()
-// let cards = []
-// let sum = 0
-// let hasBlackJack = false
-// let isAlive = false
-// let message = ""
-// let messageEl = document.getElementById("message-el")
-// let sumEl = document.querySelector("#sum-el")
-// let cardsEl = document.getElementById("cards-el")
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
+let cards = []
+let sum = 0
+let hasBlackJack = false
+let isAlive = false
+let message = ""
+let messageEl = document.getElementById("message-el")
+let sumEl = document.querySelector("#sum-el")
+let cardsEl = document.getElementById("cards-el")
 
 let player = {
     name: "Per",
@@ -20,66 +20,66 @@ playerEl.textContent = player.name + ": $" + player.chips
 
 
 
-// function getRandomCard() {
-//     let cardNumber = Math.floor(Math.random() * 13) + 1
-//     if (cardNumber > 10) {
-//         return 10
-//     } else if (cardNumber === 1) {
-//         return 11
-//     } else {
-//         return cardNumber
-//     }
+function getRandomCard() {
+    let cardNumber = Math.floor(Math.random() * 13) + 1
+    if (cardNumber > 10) {
+        return 10
+    } else if (cardNumber === 1) {
+        return 11
+    } else {
+        return cardNumber
+    }
     
-// }
+}
 
 
 
-// function startGame() {
-//     let isAlive = true
-//     let firstCard = getRandomCard()
-//     let secondCard = getRandomCard()
-//     cards = [firstCard, secondCard]
-//     sum = firstCard + secondCard
+function startGame() {
+    let isAlive = true
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard
 
 
-//     renderGame()
-// }
+    renderGame()
+}
 
 
-// function renderGame() {
+function renderGame() {
 
-//    cardsEl.textContent = "Cards: "
-//     for(let i = 0; i < cards.length; i++) {
-//         cardsEl.textContent += cards[i] + " " 
-//     }
+   cardsEl.textContent = "Cards: "
+    for(let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " " 
+    }
 
 
-//     sumEl.textContent = "Sum: " + sum
-//     if (sum <= 20) {
-//         message = "Do you want to draw a new card"
+    sumEl.textContent = "Sum: " + sum
+    if (sum <= 20) {
+        message = "Do you want to draw a new card"
         
-//     } 
-//     else if (sum === 21) {
-//         message = "Wohoo! You've got a blackjack"
-//         hasBlackJack = true
-//     } 
-//     else {
-//         message = "You're out the game"
-//         isAlive = false
-//     }
+    } 
+    else if (sum === 21) {
+        message = "Wohoo! You've got a blackjack"
+        hasBlackJack = true
+    } 
+    else {
+        message = "You're out the game"
+        isAlive = false
+    }
 
-//     messageEl.textContent = message
+    messageEl.textContent = message
 
-// }
+}
 
-// function newCard() {
-//     if (isAlive === true && hasBlackJack === true) {
-//         let card = getRandomCard()
-//         sum += card
-//         cards.push(card)
-//         renderGame()
-//     }
-// }
+function newCard() {
+    if (isAlive === true && hasBlackJack === true) {
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        renderGame()
+    }
+}
 
 
 // let messages = [
@@ -216,20 +216,20 @@ playerEl.textContent = player.name + ": $" + player.chips
 
 // console.log(getHand())
 
-let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
-let appleShelf = document.getElementById("apple-shelf")
-let orangeShelf = document.getElementById("orange-shelf")
+// let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
+// let appleShelf = document.getElementById("apple-shelf")
+// let orangeShelf = document.getElementById("orange-shelf")
 
 
-function arrangeFruit() {
-    for (let i = 0; i < fruit.length; i++) {
-        if (fruit[i] === "🍎") {
-            appleShelf.textContent += "🍎"
-        } else if (fruit[i] === "🍊") {
-            orangeShelf.textContent += "🍊"
-        }
-    }
-} 
+// function arrangeFruit() {
+//     for (let i = 0; i < fruit.length; i++) {
+//         if (fruit[i] === "🍎") {
+//             appleShelf.textContent += "🍎"
+//         } else if (fruit[i] === "🍊") {
+//             orangeShelf.textContent += "🍊"
+//         }
+//     }
+// } 
 
-console.log(arrangeFruit())
+// console.log(arrangeFruit())
 
