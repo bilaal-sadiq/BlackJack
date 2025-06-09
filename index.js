@@ -199,9 +199,19 @@ playerEl.textContent = player.name + ": $" + player.chips
 //     console.log("- " + largeCountries[i])
 // }
 
-let dayOfMonth = 13
-let weekday = "Friday"
+// let dayOfMonth = 13
+// let weekday = "Friday"
 
-if (dayOfMonth === 13 && weekday === "Friday") {
-    console.log("😱")
-} 
+// if (dayOfMonth === 13 && weekday === "Friday") {
+//     console.log("😱")
+// } 
+
+let hands = ["Rock", "paper", "sciossor"]
+
+function getHand() {
+    let randomIndex = Math.floor(Math.random() * 3)
+    return hands[randomIndex]
+    
+}
+
+console.log(getHand())
