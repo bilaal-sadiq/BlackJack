@@ -206,12 +206,30 @@ playerEl.textContent = player.name + ": $" + player.chips
 //     console.log("😱")
 // } 
 
-let hands = ["Rock", "paper", "sciossor"]
+// let hands = ["Rock", "paper", "sciossor"]
 
-function getHand() {
-    let randomIndex = Math.floor(Math.random() * 3)
-    return hands[randomIndex]
+// function getHand() {
+//     let randomIndex = Math.floor(Math.random() * 3)
+//     return hands[randomIndex]
     
-}
+// }
 
-console.log(getHand())
+// console.log(getHand())
+
+let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
+let appleShelf = document.getElementById("apple-shelf")
+let orangeShelf = document.getElementById("orange-shelf")
+
+
+function arrangeFruit() {
+    for (let i = 0; i < fruit.length; i++) {
+        if (fruit[i] === "🍎") {
+            appleShelf.textContent += "🍎"
+        } else if (fruit[i] === "🍊") {
+            orangeShelf.textContent += "🍊"
+        }
+    }
+} 
+
+console.log(arrangeFruit())
+
